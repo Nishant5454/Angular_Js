@@ -9,4 +9,7 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'HelloWorld';
+  ngOnInit(): void {
+    this.title = 'HelloWorld From BridgeLabz';// Done using Binding
+}
 }
