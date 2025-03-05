@@ -5,12 +5,18 @@ import { RouterOutlet } from '@angular/router';
   selector: 'app-root',
   imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
   title = 'HelloWorld';
   imgUrl= 'image.jpg';
+  url="https://www.bridgelabz.com/";
+  
   ngOnInit(): void {
-    this.title = 'HelloWorld From BridgeLabz';// Done using Binding
+    this.title = 'HelloWorld From BridgeLabz';
+  }
+    onClick(event:Event):void{
+      console.log("Save button is clicked!",  event);
+      window.open(this.url, "_blank");// Done using Binding
 }
 }
