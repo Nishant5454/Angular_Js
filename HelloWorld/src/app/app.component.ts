@@ -14,7 +14,7 @@ export class AppComponent {
   url = 'https://www.bridgelabz.com';
 
   ngOnInit() {
-    this.title = 'ANGULAR STARTER By Saurabh';
+    this.title = 'ANGULAR STARTER By Nishant';
   }
 
   onClick() {
