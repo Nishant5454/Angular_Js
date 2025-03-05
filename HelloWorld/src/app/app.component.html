@@ -1,7 +1,8 @@
-  <div>
-    <h1>{{title}}</h1>
-    
-    <img [src]="imgUrl" alt="Angular Logo">
-    <button (click)="onClick($event)">Click me</button>
-  </div>
-  <router-outlet></router-outlet>
+<div>
+  <h1>{{title}}</h1>
+  
+  <img [src]="imgUrl" alt="Angular Logo" width="200" height="200" (click)="onClick($event)">
+  
+  <button (click)="onClick($event)">Click me</button>
+</div>
+<router-outlet></router-outlet>
